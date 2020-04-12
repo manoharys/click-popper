@@ -27,6 +27,13 @@ playArea.btn.forEach(function (item) {
     item.addEventListener('click', handleBtn);
 });
 
-function handleBtn() {
-    console.log("Hello you just clicked button brow!!!");
+//function which handles the action for certain button clicks..
+function handleBtn(e) {
+    if (e.target.classList.contains("newGame")) {
+        startGame();
+    }
+}
+
+function startGame() {
+    console.log("Game started dude!!!");
 }
